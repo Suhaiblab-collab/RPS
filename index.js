@@ -20,18 +20,18 @@ for(round; round<=3; round++)  {
 }
     compChoice = assignNmberToWord[compNumber]
     if (compChoice === userChoice){
-        alert("its a tie!")
+        alert(`computer choose${compChoice}, its a tie!`)
         roundsPlayed++
     }else if(
             (userChoice === "rock" && compChoice === "scissors") ||
             (userChoice === "paper" && compChoice === "rock") ||
             (userChoice === "scissors" && compChoice === "paper") 
     )   {
-            alert("You won!")
+            alert(`Computer choose ${compChoice}, You won!`)
             userScore++
             roundsPlayed++
      } else{
-        alert("You lose!")
+        alert(`Computer choose ${compChoice}, You lose!`)
         compScore++
         roundsPlayed++
     }
